@@ -28,7 +28,7 @@ class Kruskal:
     i = 0
     for c in self.C:
       if (u in c): return (c,i)
-      i = i + 1
+      i += 1
 
   def merge (self, ucomp, vcomp):
     self.C = [ucomp[0] + vcomp[0]] + [i for j, i in enumerate(self.C) if j not in [ucomp[1], vcomp[1]]]

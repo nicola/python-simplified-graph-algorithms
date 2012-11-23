@@ -7,7 +7,7 @@ def find (u, C):
   i = 0
   for c in C:
     if (u in c): return (c,i)
-    i = i + 1
+    i += 1
   
 def merge (C, ucomp, vcomp):
   return [ucomp[0] + vcomp[0]] + [i for j, i in enumerate(C) if j not in [ucomp[1], vcomp[1]]]
