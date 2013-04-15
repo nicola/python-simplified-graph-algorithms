@@ -25,7 +25,7 @@ def Kruskal (N, A):
       print u, v, ":",C
       C = merge (C, ucomp, vcomp)
       T.append((u,v))
-      if (len(self.T) == (self.n-1)): break
+      if (len(T) == (n-1)): break
       
   print "\nMinimum spanning tree:\n", T
   return T
